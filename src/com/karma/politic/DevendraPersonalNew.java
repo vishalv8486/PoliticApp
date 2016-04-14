@@ -28,39 +28,57 @@ import android.widget.PopupWindow;
 import android.widget.Toast;
 
 public class DevendraPersonalNew extends Activity {
-	ImageView iv ;
+	ImageView iv, iv01, iv02, iv2;
 	LinearLayout relativeLayout;
 	private List<PersonalInfoGridItem> personalInfoGridItems;
-	RoundImage roundedImage;
+	RoundImage roundedImage, roundedImage1, roundedImage2, roundedImage3;
 	int currentWindowNumber;
-	String currentWindowName , newNameString;
-	//int popupWidthTemp = 700;
-	//int popupHeightTemp = 990;
-	int popupWidthTemp ;
-	int popupHeightTemp ;
+	String currentWindowName;
+	// int popupWidthTemp = 700;
+	// int popupHeightTemp = 990;
+	int popupWidthTemp;
+	int popupHeightTemp;
+
 	@SuppressWarnings("deprecation")
 	public void onCreate(Bundle bundle) {
 
 		super.onCreate(bundle);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.devendra_person_info_layout);
+
 		relativeLayout = (LinearLayout) findViewById(R.id.rl);
 		iv = (ImageView) findViewById(R.id.imageView1);
+		iv01 = (ImageView) findViewById(R.id.ImageView011);
+		iv02 = (ImageView) findViewById(R.id.ImageView02);
+		iv2 = (ImageView) findViewById(R.id.imageView2);
 
-		newNameString = "vishal";
-		
 		DisplayMetrics displaymetrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
 		int height = displaymetrics.heightPixels;
 		int width = displaymetrics.widthPixels;
-		
+
 		popupWidthTemp = width - 50;
-		popupHeightTemp = height - 50 ;
-		
+		popupHeightTemp = height - 50;
+
 		iv.setImageResource(R.drawable.devendra);
 		Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.devendra);
 		roundedImage = new RoundImage(bm);
 		iv.setImageDrawable(roundedImage);
+
+		iv01.setImageResource(R.drawable.fbcircle);
+		Bitmap bm1 = BitmapFactory.decodeResource(getResources(), R.drawable.fbcircle);
+		roundedImage1 = new RoundImage(bm1);
+		iv01.setImageDrawable(roundedImage1);
+
+		iv02.setImageResource(R.drawable.twicircle);
+		Bitmap bm2 = BitmapFactory.decodeResource(getResources(), R.drawable.twicircle);
+		roundedImage2 = new RoundImage(bm2);
+		iv02.setImageDrawable(roundedImage2);
+
+		iv2.setImageResource(R.drawable.gcircletwo);
+		Bitmap bm3 = BitmapFactory.decodeResource(getResources(), R.drawable.gcircletwo);
+		roundedImage3 = new RoundImage(bm3);
+		iv2.setImageDrawable(roundedImage3);
 
 		personalInfoGridItems = new ArrayList<PersonalInfoGridItem>();
 		Resources resources = getResources();
@@ -70,12 +88,18 @@ public class DevendraPersonalNew extends Activity {
 
 		personalInfoGridItems.add(new PersonalInfoGridItem(getString(R.string.PoliticalCareer),
 				(resources.getDrawable(R.drawable.politicalprofile))));
-		// chk msgs bro
 
 		personalInfoGridItems.add(new PersonalInfoGridItem(getString(R.string.Suggestion),
 				(resources.getDrawable(R.drawable.suggestion))));
+
 		personalInfoGridItems.add(new PersonalInfoGridItem(getString(R.string.WorkDetail),
-				(resources.getDrawable(R.drawable.workdetailsicon))));
+				(resources.getDrawable(R.drawable.work_details))));
+		
+		personalInfoGridItems.add(new PersonalInfoGridItem(getString(R.string.Appointments),
+				(resources.getDrawable(R.drawable.appoientmets_three))));
+		
+		personalInfoGridItems.add(new PersonalInfoGridItem(getString(R.string.Complaints),
+				(resources.getDrawable(R.drawable.compaints))));
 
 		GridView gridView = (GridView) findViewById(R.id.gridView);
 		// ListView listView = (ListView) findViewById(R.id.grid);
@@ -139,7 +163,7 @@ public class DevendraPersonalNew extends Activity {
 		new Handler().postDelayed(new Runnable() {
 
 			public void run() {
-				popupTemp.showAtLocation(layoutTemp, Gravity.CENTER_VERTICAL, 10,10);
+				popupTemp.showAtLocation(layoutTemp, Gravity.CENTER_VERTICAL, 10, 10);
 			}
 
 		}, 100L);
@@ -166,7 +190,7 @@ public class DevendraPersonalNew extends Activity {
 					universalPopup(R.layout.work_details_layout);
 				}
 			});
-			
+
 			ImageView submitButton2 = (ImageView) layoutTemp.findViewById(R.id.textView51);
 			submitButton2.setOnClickListener(new OnClickListener() {
 
@@ -176,7 +200,7 @@ public class DevendraPersonalNew extends Activity {
 					universalPopup(R.layout.work_details_layout);
 				}
 			});
-			
+
 			ImageView submitButton6 = (ImageView) layoutTemp.findViewById(R.id.textView52);
 			submitButton6.setOnClickListener(new OnClickListener() {
 
@@ -186,7 +210,7 @@ public class DevendraPersonalNew extends Activity {
 					universalPopup(R.layout.work_details_layout);
 				}
 			});
-			
+
 			ImageView submitButton3 = (ImageView) layoutTemp.findViewById(R.id.textView54);
 			submitButton3.setOnClickListener(new OnClickListener() {
 
@@ -196,7 +220,7 @@ public class DevendraPersonalNew extends Activity {
 					universalPopup(R.layout.work_details_layout);
 				}
 			});
-			
+
 			ImageView submitButton4 = (ImageView) layoutTemp.findViewById(R.id.textView53);
 			submitButton4.setOnClickListener(new OnClickListener() {
 

@@ -6,16 +6,16 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/appicon"
         android:label="@string/app_name"
         android:largeHeap="true"
-       android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
         <activity
-            android:name="com.karma.politic.SplashScreenActivity"
+            android:name="com.karma.politic.DevendraPersonalNew"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -61,10 +61,12 @@
             android:name="com.karma.politic.VinodPoliticalInfo"
             android:screenOrientation="portrait" >
         </activity>
+        <!--
         <activity
             android:name="com.karma.politic.DevendraPersonalNew"
             android:screenOrientation="portrait" >
         </activity>
+        -->
         <activity
             android:name="com.karma.politic.MainActivity"
             android:screenOrientation="portrait" >

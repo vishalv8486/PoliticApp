@@ -16,14 +16,8 @@
     <string name="mpconstituency4">Amethi</string>
     <string name="mpconstituency5">Punjab</string>
     <string name="mpconstituency6">Varanasi</string>
-
-    <!-- DateTime -->
     <string name="datetime">12/4/2014</string>
-
-    <!-- duration -->
     <string name="duration">2014 to 2019</string>
-
-    <!-- political party -->
     <string name="party">BJP</string>
 
 </resources>

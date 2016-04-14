@@ -5,5 +5,7 @@
     <string name="PoliticalCareer">Political Career</string>
     <string name="Suggestion">Suggestion</string>
     <string name="WorkDetail">Work Details</string>
+     <string name="Appointments">Appointments</string>
+      <string name="Complaints">Complaints</string>
 
 </resources>

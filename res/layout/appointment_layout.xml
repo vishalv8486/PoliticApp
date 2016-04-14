@@ -83,7 +83,7 @@
             android:background="@drawable/blue_btnselector"
             android:onClick="resetButton"
             android:text="Reset"
-            android:textColor="#2E9AFE" />
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/submitButtonA"
@@ -92,7 +92,7 @@
             android:layout_margin="20dp"
             android:background="@drawable/orange_btnselector"
             android:text="Submit"
-            android:textColor="#ff8811" />
+            android:textColor="#ffffff" />
     </LinearLayout>
 
 </LinearLayout>

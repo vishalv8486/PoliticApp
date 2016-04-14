@@ -29,6 +29,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class DevendraPersonalNew extends Activity {
@@ -52,17 +53,17 @@ public class DevendraPersonalNew extends Activity {
 
 		relativeLayout = (LinearLayout) findViewById(R.id.rl);
 		iv = (ImageView) findViewById(R.id.imageView1);
-		iv_fbcircle = (ImageView) findViewById(R.id.ImageView011);
-		iv_twitcircle = (ImageView) findViewById(R.id.ImageView02);
-		iv_gpluscircle = (ImageView) findViewById(R.id.imageView2);
+		iv_fbcircle = (ImageView) findViewById(R.id.imageView2);
+		iv_twitcircle = (ImageView) findViewById(R.id.ImageView011);
+		iv_gpluscircle = (ImageView) findViewById(R.id.imageView3);
 
 		DisplayMetrics displaymetrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
 		int height = displaymetrics.heightPixels;
 		int width = displaymetrics.widthPixels;
 
-		popupWidthTemp = width - 50;
-		popupHeightTemp = height - 50;
+		popupWidthTemp = width;
+		popupHeightTemp = height;
 
 		iv.setImageResource(R.drawable.devendra);
 		Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.devendra);
@@ -89,7 +90,7 @@ public class DevendraPersonalNew extends Activity {
 			@Override
 			public void onClick(View v) {
 				currentWindowNumber = 107;
-				universalPopup(R.layout.fb_webview_layout);
+				universalPopup(R.layout.webview_layout);
 			}
 		});
 
@@ -98,7 +99,7 @@ public class DevendraPersonalNew extends Activity {
 			@Override
 			public void onClick(View v) {
 				currentWindowNumber = 108;
-				universalPopup(R.layout.fb_webview_layout);
+				universalPopup(R.layout.webview_layout);
 			}
 		});
 
@@ -107,7 +108,7 @@ public class DevendraPersonalNew extends Activity {
 			@Override
 			public void onClick(View v) {
 				currentWindowNumber = 109;
-				universalPopup(R.layout.fb_webview_layout);
+				universalPopup(R.layout.webview_layout);
 			}
 		});
 
@@ -168,13 +169,13 @@ public class DevendraPersonalNew extends Activity {
 					break;
 
 				case 4:
-
+					// appointment
 					currentWindowNumber = 105;
 					universalPopup(R.layout.appointment_layout);
 					break;
 
 				case 5:
-
+					// complaints
 					currentWindowNumber = 106;
 					universalPopup(R.layout.submit_complaint_details);
 					break;
@@ -202,16 +203,6 @@ public class DevendraPersonalNew extends Activity {
 
 		dialog.show();
 
-		// popupTemp.showAtLocation(dialog, Gravity.CENTER_HORIZONTAL, 0,
-		// 0);
-		/*new Handler().postDelayed(new Runnable() {
-
-			public void run() {
-				popupTemp.showAtLocation(dialog, Gravity.CENTER_VERTICAL, 10, 10);
-			}
-
-		}, 100L);*/
-
 		if (currentWindowNumber == 3) {
 			Button submitButton = (Button) dialog.findViewById(R.id.submitButtonA);
 			submitButton.setOnClickListener(new OnClickListener() {
@@ -225,7 +216,8 @@ public class DevendraPersonalNew extends Activity {
 		}
 
 		if (currentWindowNumber == 4) {
-			ImageView submitButton = (ImageView) dialog.findViewById(R.id.textView5);
+
+			TextView submitButton = (TextView) dialog.findViewById(R.id.textView5);
 			submitButton.setOnClickListener(new OnClickListener() {
 
 				@Override
@@ -235,8 +227,8 @@ public class DevendraPersonalNew extends Activity {
 				}
 			});
 
-			ImageView submitButton2 = (ImageView) dialog.findViewById(R.id.textView51);
-			submitButton2.setOnClickListener(new OnClickListener() {
+			TextView submitButton53 = (TextView) dialog.findViewById(R.id.textView53);
+			submitButton53.setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
@@ -245,8 +237,8 @@ public class DevendraPersonalNew extends Activity {
 				}
 			});
 
-			ImageView submitButton6 = (ImageView) dialog.findViewById(R.id.textView52);
-			submitButton6.setOnClickListener(new OnClickListener() {
+			TextView submitButton54 = (TextView) dialog.findViewById(R.id.textView54);
+			submitButton54.setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
@@ -255,8 +247,8 @@ public class DevendraPersonalNew extends Activity {
 				}
 			});
 
-			ImageView submitButton3 = (ImageView) dialog.findViewById(R.id.textView54);
-			submitButton3.setOnClickListener(new OnClickListener() {
+			TextView submitButton55 = (TextView) dialog.findViewById(R.id.textView55);
+			submitButton55.setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
@@ -265,8 +257,8 @@ public class DevendraPersonalNew extends Activity {
 				}
 			});
 
-			ImageView submitButton4 = (ImageView) dialog.findViewById(R.id.textView53);
-			submitButton4.setOnClickListener(new OnClickListener() {
+			TextView submitButton56 = (TextView) dialog.findViewById(R.id.textView56);
+			submitButton56.setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
@@ -275,6 +267,115 @@ public class DevendraPersonalNew extends Activity {
 				}
 			});
 
+			TextView textV3 = (TextView) dialog.findViewById(R.id.textView3);
+			textV3.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 201;
+					universalPopup(R.layout.feedbacks_list);
+				}
+			});
+
+			TextView textV31 = (TextView) dialog.findViewById(R.id.textView31);
+			textV31.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 201;
+					universalPopup(R.layout.feedbacks_list);
+				}
+			});
+
+			TextView textV32 = (TextView) dialog.findViewById(R.id.textView32);
+			textV32.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 201;
+					universalPopup(R.layout.feedbacks_list);
+				}
+			});
+
+			TextView textV33 = (TextView) dialog.findViewById(R.id.textView33);
+			textV33.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 201;
+					universalPopup(R.layout.feedbacks_list);
+				}
+			});
+
+			TextView textV34 = (TextView) dialog.findViewById(R.id.textView34);
+			textV34.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 201;
+					universalPopup(R.layout.feedbacks_list);
+				}
+			});
+
+			TextView textV4 = (TextView) dialog.findViewById(R.id.textView4);
+			textV4.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 202;
+					universalPopup(R.layout.likes_list);
+				}
+			});
+
+			TextView textV41 = (TextView) dialog.findViewById(R.id.textView41);
+			textV41.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 202;
+					universalPopup(R.layout.likes_list);
+				}
+			});
+
+			TextView textV42 = (TextView) dialog.findViewById(R.id.textView42);
+			textV42.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 202;
+					universalPopup(R.layout.likes_list);
+				}
+			});
+
+			TextView textV43 = (TextView) dialog.findViewById(R.id.textView43);
+			textV43.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 202;
+					universalPopup(R.layout.likes_list);
+				}
+			});
+
+			TextView textV44 = (TextView) dialog.findViewById(R.id.textView44);
+			textV44.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+
+					currentWindowNumber = 202;
+					universalPopup(R.layout.likes_list);
+				}
+			});
 		}
 
 		if (currentWindowNumber == 5) {
@@ -353,9 +454,27 @@ public class DevendraPersonalNew extends Activity {
 		if (currentWindowNumber == 107) {
 			WebView mWebview = (WebView) dialog.findViewById(R.id.webView1);
 			mWebview.getSettings().setLoadsImagesAutomatically(true);
-			mWebview.getSettings().setJavaScriptEnabled(true);
+
 			mWebview.setWebViewClient(new WebViewClient());
 			mWebview.loadUrl("https://www.facebook.com/devendra.fadnavis");
+
+		}
+
+		if (currentWindowNumber == 108) {
+			WebView mWebview = (WebView) dialog.findViewById(R.id.webView1);
+			mWebview.getSettings().setLoadsImagesAutomatically(true);
+
+			mWebview.setWebViewClient(new WebViewClient());
+			mWebview.loadUrl("https://twitter.com/Dev_Fadnavis");
+
+		}
+
+		if (currentWindowNumber == 109) {
+			WebView mWebview = (WebView) dialog.findViewById(R.id.webView1);
+			mWebview.getSettings().setLoadsImagesAutomatically(true);
+
+			mWebview.setWebViewClient(new WebViewClient());
+			mWebview.loadUrl("https://plus.google.com/102146797989201256034");
 
 		}
 	}

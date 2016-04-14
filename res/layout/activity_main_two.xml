@@ -42,7 +42,7 @@
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:singleLine="true"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#3f3f3f"
         android:textColor="#FF4000"
         android:textStyle="bold" />
 
@@ -61,7 +61,7 @@
         android:drawingCacheQuality="auto"
         android:ems="10"
         android:hint="Username"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#3f3f3f"
         android:textColor="#FF4000"
         android:paddingLeft="15dp"
         android:singleLine="true"

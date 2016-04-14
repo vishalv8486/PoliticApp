@@ -94,10 +94,10 @@ public class DevendraPersonalNew extends Activity {
 
 		personalInfoGridItems.add(new PersonalInfoGridItem(getString(R.string.WorkDetail),
 				(resources.getDrawable(R.drawable.work_details))));
-		
+
 		personalInfoGridItems.add(new PersonalInfoGridItem(getString(R.string.Appointments),
 				(resources.getDrawable(R.drawable.appoientmets_three))));
-		
+
 		personalInfoGridItems.add(new PersonalInfoGridItem(getString(R.string.Complaints),
 				(resources.getDrawable(R.drawable.compaints))));
 
@@ -136,6 +136,17 @@ public class DevendraPersonalNew extends Activity {
 					universalPopup(R.layout.work_details_piece);
 					break;
 
+				case 4:
+
+					currentWindowNumber = 105;
+					universalPopup(R.layout.appointment_layout);
+					break;
+
+				case 5:
+
+					currentWindowNumber = 106;
+					universalPopup(R.layout.submit_complaint_details);
+					break;
 				}
 			}
 
@@ -275,6 +286,32 @@ public class DevendraPersonalNew extends Activity {
 				@Override
 				public void onClick(View v) {
 					Toast.makeText(getApplicationContext(), "Rating Submitted", Toast.LENGTH_LONG).show();
+					popupTemp.dismiss();
+				}
+			});
+		}
+
+		if (currentWindowNumber == 106) {
+			Button submitButton = (Button) layoutTemp.findViewById(R.id.ratingSubmit);
+			submitButton.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					Toast.makeText(getApplicationContext(), "Complaint Submitted", Toast.LENGTH_LONG).show();
+					popupTemp.dismiss();
+				}
+			});
+		}
+
+		if (currentWindowNumber == 105) {
+			Button submitButton = (Button) layoutTemp.findViewById(R.id.ratingSubmit);
+			submitButton.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					Toast.makeText(getApplicationContext(),
+							"Appointment Submitted , \n  We Will reach to you shortly to confirm Appointment Schedule",
+							Toast.LENGTH_LONG).show();
 					popupTemp.dismiss();
 				}
 			});

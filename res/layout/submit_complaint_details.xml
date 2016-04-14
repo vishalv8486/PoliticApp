@@ -13,7 +13,7 @@
         android:background="@drawable/header_one_rounded_shape"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Submit Suggestion"
+        android:text="Submit Complaint "
         android:textColor="#ffffff"
         android:textSize="23sp"
         android:textStyle="bold" />
@@ -63,7 +63,7 @@
         android:layout_weight="0.27"
         android:ems="10"
         android:gravity="top"
-        android:hint="Suggestion Description"
+        android:hint="Complaint Description"
         android:inputType="textMultiLine"
         android:textColor="#ff8811"
         android:textColorHint="#C0C0C0" />

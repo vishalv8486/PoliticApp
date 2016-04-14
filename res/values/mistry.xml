@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="post1">Prime Minister Of India</string>
+    <string name="post2">Minister of Road Transport and Highways of India</string>
+    <string name="post3"> Railway Minister of India</string>
+    <string name="post4">Minister of Human Resource Development</string>
+    <string name="post5">Minister of External Affairs of India</string>
+    <string name="post6">Minister of Finance of India</string>
+
+</resources>

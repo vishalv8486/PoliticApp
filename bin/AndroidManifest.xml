@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.karma.politic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+       android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        <activity
+            android:name="com.karma.politic.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.karma.politic.OtpVerification"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.CandidateSelection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.PersonalInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.TabMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.SignUpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.DevendraPersonalInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.DevendraPoliticalInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.VinodPersonalInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.VinodPoliticalInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.DevendraPersonalNew"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.SubmitSuggestionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.UserOTP"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.VinodPersonal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.WorkDetailsInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.karma.politic.WorkDetailsPieceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

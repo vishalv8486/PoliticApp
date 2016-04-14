@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/had_nlur"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.karma.politic.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Change Language"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:layout_alignParentRight="true"
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:contentDescription="Select Language"
+        android:entries="@array/Languages"
+        android:prompt="@string/spinner_text" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:alpha="0.86"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/userimag1"
+        android:drawablePadding="10dp"
+        android:drawingCacheQuality="auto"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="Username"
+        android:textColor="#151b54"
+        android:paddingLeft="15dp" >
+		
+        
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="18dp"
+        android:alpha="0.86"
+        android:background="@drawable/button_design"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="16dp"
+        android:alpha="0.86"
+        android:background="@drawable/button_design_two"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <EditText
+         android:singleLine="true"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:alpha="0.86"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/passwordimage2"
+        android:drawingCacheQuality="auto"
+        android:ems="10"
+        android:paddingLeft="15dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#151b54" />
+
+</RelativeLayout>

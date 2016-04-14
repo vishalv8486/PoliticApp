@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="PersonalInfo">Personal Info</string>
+    <string name="PoliticalCareer">Political Career</string>
+    <string name="Suggestion">Suggestion</string>
+    <string name="WorkDetail">Work Details</string>
+
+</resources>

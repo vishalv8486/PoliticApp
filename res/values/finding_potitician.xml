@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="State">
+        <item>State</item>
+    </string-array>
+    <string-array name="District">
+        <item>District</item>
+    </string-array>
+    <string-array name="Constituency">
+        <item>Constituency</item>
+    </string-array>
+
+    <!-- selecting state into finding ppoliticin activity -->
+    <string-array name="SpinnerState">
+        <item>State</item>
+        <item>Maharashtra</item>
+        <item>Goa</item>
+        <item>Gujraat</item>
+        <item>Karnataka</item>
+        <item>AndhraPradesh</item>
+    </string-array>
+
+    <!-- as per state district -->
+
+    <string-array name="SpinnerMahareshtraDistrict">
+        <item>District</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Kolhapur</item>
+        <item>Satara</item>
+        <item>Nanded</item>
+        <item>Latur</item>
+        <item>Jalgaon</item>
+    </string-array>
+
+    <!-- as per Mumbai consituency politicians -->
+    <string-array name="SpinnerMumbaiContituency">
+        <item>Constituency</item>
+        <item>Navi Mumbai</item>
+        <item>Dadar</item>
+        <item>Andheri</item>
+        <item>Bhandup</item>
+        <item>Bandra</item>
+        <item>Vashi</item>
+    </string-array>
+    <!-- as per Pune consituency politicians -->
+    <string-array name="SpinnerPuneContituency">
+        <item>Constituency</item>
+        <item>Maval</item>
+        <item>KhadakWasla</item>
+        <item>Shirur</item>
+        <item>Junner</item>
+    </string-array>
+
+    <!-- as per Kolhapur consituency politicians -->
+    <string-array name="SpinnerKolhapurContituency">
+        <item>Constituency</item>
+        <item>Kagal</item>
+        <item>Chandgad</item>
+        <item>Ichalkarnji</item>
+        <item>Warnanagar</item>
+    </string-array>
+
+    <!-- as per Gujraat state constituency -->
+    <string-array name="SpinnerGujraatDistrict">
+        <item>District</item>
+        <item>Gandhinagar</item>
+        <item>Rajkot</item>
+        <item>Ahmadabad</item>
+        <item>Surendranagar</item>
+    </string-array>
+
+    <!-- as per Goa state disrtict -->
+
+    <string-array name="SpinnerGoaDistrict">
+        <item>Panjim</item>
+        <item>Mapsa</item>
+        <item>North Goa</item>
+        <item>Kalingud</item>
+        <item>Kolva</item>
+        <item>Talegaon</item>
+    </string-array>
+    <!-- as per Andhra state districts -->
+    <string-array name="SpinnerAndhraDistrict">
+        <item>Hydrabad</item>
+        <item>Araku</item>
+        <item>Srikakulam</item>
+        <item>Vizianagaram</item>
+        <item>Visakhapatnam</item>
+    </string-array>
+    <!-- as per karnatka state disrticts -->
+    <string-array name="SpinnerKarnatkaDistrict">
+        <item>Belgaum</item>
+        <item>Bijapur</item>
+        <item>Chikkodi</item>
+        <item>Dharwad</item>
+    </string-array>
+
+</resources>

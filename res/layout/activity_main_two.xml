@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_one" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Select Language"
+        android:entries="@array/Languages"
+        android:prompt="@string/spinner_text" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Change Language"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_margin="10dp"
+        android:alpha="0.56"
+        android:background="@drawable/edittext_border"
+        android:drawablePadding="2dp"
+        android:drawingCacheQuality="auto"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FF4000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:textStyle="bold"
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner1"
+        android:layout_margin="10dp"
+        android:layout_marginTop="43dp"
+        android:alpha="0.56"
+        android:background="@drawable/edittext_border"
+        android:drawablePadding="10dp"
+        android:drawingCacheQuality="auto"
+        android:ems="10"
+        android:hint="Username"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FF4000"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+         >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editText2"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:alpha="0.85"
+            android:background="@drawable/button_gray_background"
+            android:onClick="loginButton"
+            android:text="     Login    "
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1"
+            android:alpha="0.85"
+            android:background="@drawable/button_gray_background"
+            android:onClick="signupButton"
+            android:text="   Sign Up   "
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

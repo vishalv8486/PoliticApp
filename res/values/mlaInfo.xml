@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MLa names -->
+    <string name="mlaName1"> Shree.Devendra Fadnavis</string>
+    <string name="mlaName2">Shree.Vinod Tawade</string>
+    <string name="mlaName3">Shree.Ekanth Khadse</string>
+    <string name="mlaName4">Shree.Sudhir Manguntivar</string>
+    <string name="mlaName5">Shree.Girish Mahajan</string>
+    <string name="mlaName6">Shree.Eknath Shinde</string>
+    
+    
+    <!-- mla constituency -->
+    <string name="mlaconstituency1">Nagpur</string>
+    <string name="mlaconstituency2">Mumbai</string>
+    <string name="mlaconstituency3">Jalgaon</string>
+    <string name="mlaconstituency4">Chandrapur</string>
+    <string name="mlaconstituency5">Bhusaval</string>
+    <string name="mlaconstituency6">kalyan</string>
+
+    <!-- DateTime -->
+    <string name="datetime">12/4/2014</string>
+
+    <!-- duration -->
+    <string name="duration">2014 to 2019</string>
+
+    <!-- political party -->
+    <string name="party">BJP</string>
+
+</resources>

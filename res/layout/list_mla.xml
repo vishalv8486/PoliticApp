@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#2E2E2E">
+
+    <ImageView
+        android:id="@+id/mlaImage"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round_corner"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/narendramodi"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:onClick="readmoreImageClicked"
+        android:id="@+id/btnViewDetail"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnRating"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/orangearrow" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mlaImage"
+        android:layout_toRightOf="@+id/mlaImage"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textMlaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Name : Narendra Modi"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textConstituency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="15dp"
+            android:text="Constituency : Gujrat"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="15dp"
+            android:text="Duration"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textParty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="15dp"
+            android:text="Political Party : BJP"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnRating"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/ll1"
+        android:layout_below="@+id/ll1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rting" />
+
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll1"
+        android:layout_alignRight="@+id/btnViewDetail"
+        android:text="TextView"
+        android:textColor="#FE9A2E"
+        android:textSize="13sp" />
+
+</RelativeLayout>

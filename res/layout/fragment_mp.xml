@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242" >
+
+    <TextView
+        android:id="@+id/txtMp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/header_one_rounded_shape"
+        android:gravity="top|center"
+        android:padding="10dp"
+        android:text="Member of Parlment"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listMpInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMp"
+        android:divider="#888888"
+        android:dividerHeight="1dp"
+        android:focusableInTouchMode="false" >
+    </ListView>
+
+</RelativeLayout>

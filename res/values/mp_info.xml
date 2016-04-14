@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Mp names -->
+    <string name="mpName1">Shree.Narendra Modi</string>
+    <string name="mpName2">Shree.Nitin Gadkari</string>
+    <string name="mpName3">Shree.Suresh Prabhu</string>
+    <string name="mpName4">Shree.Smirti Irani</string>
+    <string name="mpName5">Shree.Arun Jaitley</string>
+    <string name="mpName6">Shree.Sushma Swaraj</string>
+
+    <!-- mla constituency -->
+    <string name="mpconstituency1">Gujraat</string>
+    <string name="mpconstituency2">Nagpur</string>
+    <string name="mpconstituency3">Delhi</string>
+    <string name="mpconstituency4">Amethi</string>
+    <string name="mpconstituency5">Punjab</string>
+    <string name="mpconstituency6">Varanasi</string>
+
+    <!-- DateTime -->
+    <string name="datetime">12/4/2014</string>
+
+    <!-- duration -->
+    <string name="duration">2014 to 2019</string>
+
+    <!-- political party -->
+    <string name="party">BJP</string>
+
+</resources>

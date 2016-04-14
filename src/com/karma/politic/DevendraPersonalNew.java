@@ -28,12 +28,12 @@ import android.widget.PopupWindow;
 import android.widget.Toast;
 
 public class DevendraPersonalNew extends Activity {
-	ImageView iv;
+	ImageView iv ;
 	LinearLayout relativeLayout;
 	private List<PersonalInfoGridItem> personalInfoGridItems;
 	RoundImage roundedImage;
 	int currentWindowNumber;
-	String currentWindowName;
+	String currentWindowName , newNameString;
 	//int popupWidthTemp = 700;
 	//int popupHeightTemp = 990;
 	int popupWidthTemp ;
@@ -47,6 +47,8 @@ public class DevendraPersonalNew extends Activity {
 		relativeLayout = (LinearLayout) findViewById(R.id.rl);
 		iv = (ImageView) findViewById(R.id.imageView1);
 
+		newNameString = "vishal";
+		
 		DisplayMetrics displaymetrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
 		int height = displaymetrics.heightPixels;
